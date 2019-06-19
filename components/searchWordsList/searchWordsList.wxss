@@ -1,0 +1,22 @@
+/* components/searchwords/searchWordsList.wxss */
+.words-section {
+  margin: 30rpx;
+}
+.words-title {
+  font-size: 14px;
+  color: #333;
+}
+.words {
+  margin-top: 5px;
+}
+.word-tag {
+  display: inline-block;
+  background-color: #dedede;
+  margin: 0 5px 5px 0;
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #333;
+}
+.word-tag.highlight {
+  background-color: rgb(253, 224, 224);
+}

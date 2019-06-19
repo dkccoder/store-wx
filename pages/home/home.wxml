@@ -1,0 +1,20 @@
+<view class='searchbar'>
+  <view class='location'>
+    <image src='/icons/location.png' class='location-icon' />
+    <text class='location-text'>{{currentCity}}</text>
+  </view>
+  <view class='searchbox' bindtap='toSearch'>搜索</view>
+</view>
+<swiper
+  indicator-dots="{{true}}"
+  autoplay="{{false}}"
+  interval="{{3000}}"
+  duration="{{1000}}"
+  style="width: {{screenWidth}}px; height: {{screenWidth / 483 * 322 }}px"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width: {{screenWidth}}px; height: {{screenWidth / 483 * 322 }}px "/>
+    </swiper-item>
+  </block>
+</swiper>

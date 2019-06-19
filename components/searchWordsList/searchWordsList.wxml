@@ -1,0 +1,12 @@
+<view class='words-section'>
+  <view class='words-title'>{{title}}</view>
+  <view class='words'>
+    <text
+      bindtap='handleWordTap'
+      wx:for="{{words}}"
+      wx:key="{{item.word}}"
+      data-word="{{item.word}}"
+      class="word-tag {{item.highlight === true ? 'highlight' : ''}}"
+    >{{item.word}}</text>
+  </view>
+</view>

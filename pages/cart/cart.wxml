@@ -1,0 +1,9 @@
+<!--pages/cart/cart.wxml-->
+<view
+    wx:for="{{cartList}}"
+    wx:key="{{item.id}}"
+  >
+    <image width="" src="{{item.image}}" />
+    <view>{{item.title}}</view>
+    <view>{{item.quantity}}</view>
+  </view>

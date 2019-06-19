@@ -1,0 +1,27 @@
+<!--pages/mall/mall.wxml-->
+<view
+  class='nav'
+>
+  <view
+    wx:for="{{cateNav}}"
+    wx:key="{{item.id}}"
+    class="nav-item {{currentCateId === item.id ? 'current' : ''}}"
+    bindtap="changeCategory"
+    data-id="{{item.id}}"
+  >{{item.name}}</view>
+</view>
+<scroll-view
+  class='main'
+  scroll-y
+  bindscrolltolower="loadMore"
+>
+  <navigator
+    wx:for="{{products}}"
+    wx:key="{{item.id}}"
+    url='/pages/detail/detail?id={{item.id}}'
+  >
+    <image width="" src="{{item.image}}" />
+    <view>{{item.title}}</view>
+    <button data-product="{{item}}" catchtap='addToCart'>加入购物车</button>
+  </navigator>
+</scroll-view>

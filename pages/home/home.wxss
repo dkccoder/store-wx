@@ -1,0 +1,26 @@
+.searchbar {
+  height: 32px;
+  background-color: #dedede;
+  display: flex;
+  align-items: center;
+}
+.location {
+  display: flex;
+  align-items: center;
+}
+.location-icon {
+  width: 24px;
+  height: 24px;
+}
+.location-text {
+  line-height: 32px;
+}
+.searchbox {
+  background-color: #FFF;
+  flex: 1;
+  margin: 4px;
+  line-height: 24px;
+  border-radius: 3px;
+  text-align: center;
+  color: #999;
+}

@@ -1,0 +1,28 @@
+/* pages/mall/mall.wxss */
+page {
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.nav {
+  overflow-x: hidden;
+  background-color: #dedede;
+  width: 200rpx;
+}
+
+.nav-item {
+  padding: 6px 15px 6px 6px;
+  border-left: 2px solid #dedede;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-item.current {
+  border-left: 2px solid #f00;
+  background-color: #fff;
+}
+
+.main {
+  width: 550rpx;
+  height: 100%;
+}

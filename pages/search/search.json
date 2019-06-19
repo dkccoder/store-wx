@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "serch-words-list": "/components/searchWordsList/searchWordsList"
+  }
+}
